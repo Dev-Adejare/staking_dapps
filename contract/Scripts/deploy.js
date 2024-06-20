@@ -2,7 +2,7 @@ const hre = require("hardhat");
 async function main() {
   const StakeToken = await hre.ethers.getContractFactory("StakeToken");
   const stakeToken = await StakeToken.deploy(1000);
-//   await stakeToken.deployed();
+
   console.log("StakeToken deployed to:", stakeToken.target);
 }
 
